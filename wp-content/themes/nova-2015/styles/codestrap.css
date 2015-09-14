@@ -1,0 +1,56 @@
+/*=====================================================================
+                         (                           
+   (          (          )\ )    )                   
+   )\         )\ )   (  (()/( ( /( (       )         
+ (((_)   (   (()/(  ))\  /(_)))\()))(   ( /(  `  )   
+ )\___   )\   ((_))/((_)(_)) (_))/(()\  )(_)) /(/(   
+((/ __| ((_)  _| |(_))  / __|| |_  ((_)((_)_ ((_)_\  
+ | (__ / _ \/ _` |/ -_) \__ \|  _|| '_|/ _` || '_ \) 
+  \___|\___/\__,_|\___| |___/ \__||_|  \__,_|| .__/  
+                                             |_|     
+                                                                
+=====================================================================*/
+
+/*=====================================================================
+    
+    General Information
+
+        Welcome to CodeStrap - CodeLab's self-maintained css library.
+
+
+    Fonts
+                              
+        font-family: 'Poiret One', cursive;
+
+
+=====================================================================*/
+
+/*  Resizes image to fit div, but not past max size. */
+.cs-image-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/*  Stretches any image to fill the div, regardless of size. */
+.cs-image-responsive-scaled{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* Centered Button */
+.cs-close-button{
+    text-align: center;
+    display: inline-block;
+}
+.unselectable{
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
