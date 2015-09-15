@@ -26,7 +26,7 @@ define('DB_NAME', 'wp-ngc');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'carleis0');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

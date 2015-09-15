@@ -179,7 +179,7 @@ table, th, td{
 .post-text{
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .comments-area{
   text-align:left;
@@ -243,5 +243,11 @@ ul.children{
   }
   #logo-subtext{
     font-size: 8vw;
+  }
+  .post-text{
+    font-size: 15px;
+  }
+  .post-header h2{
+    font-size: 10vw;
   }
 }
