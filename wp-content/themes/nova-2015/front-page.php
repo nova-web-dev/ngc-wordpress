@@ -25,21 +25,48 @@
                 <div class="carousel-overlay">
                     <!-- 100% div filling entire picture -->
                     <div class="textbox-1-1 text-center">
-                        <span id="text-span-1">We have a minecraft server!</span>
-                        <span id="text-span-2"><br />Join us there! eis.novagaming.co.za</span>
+                        <span class="text-span-1">We have a minecraft server!</span>
+                        <span class="text-span-2"><br />Join us there! eis.novagaming.co.za</span>
                     </div>
                 </div>
             </div>
             <!-- End of slide 1 -->
+            <!-- Slide 2 -->
             <div class="item">
                 <img style="width:100%" src="images/slider/001-minecraft.jpg" alt="image-missing!">
+                <div class="carousel-overlay">
+                    <!-- 100% div filling entire picture -->
+                    <div class="textbox-1-1 text-center">
+                        <span class="text-span-1">We have a minecraft server!</span>
+                        <span class="text-span-2"><br />Join us there! eis.novagaming.co.za</span>
+                    </div>
+                </div>
             </div>
+            <!-- End of slide 2 -->
+            <!-- Slide 3 -->
             <div class="item">
                 <img style="width:100%" src="images/slider/001-minecraft.jpg" alt="image-missing!">
+                <div class="carousel-overlay">
+                    <!-- 100% div filling entire picture -->
+                    <div class="textbox-1-1 text-center">
+                        <span class="text-span-1">We have a minecraft server!</span>
+                        <span class="text-span-2"><br />Join us there! eis.novagaming.co.za</span>
+                    </div>
+                </div>
             </div>
+            <!-- End of slide 3 -->
+            <!-- Slide 4 -->
             <div class="item">
                 <img style="width:100%" src="images/slider/001-minecraft.jpg" alt="image-missing!">
+                <div class="carousel-overlay">
+                    <!-- 100% div filling entire picture -->
+                    <div class="textbox-1-1 text-center">
+                        <span class="text-span-1">We have a minecraft server!</span>
+                        <span class="text-span-2"><br />Join us there! eis.novagaming.co.za</span>
+                    </div>
+                </div>
             </div>
+            <!-- End of slide 4 -->
         </div>
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -53,43 +80,56 @@
     </div>
 </div>
 <!-- Carousel Ends -->
+
 <!-- Main Content Starts -->
 <div class="container text-center" id="main-content">
-<!--     <div id="cs-news-banner" class="text-center">
-        <h1>News</h1>
-    </div>
-    <hr class="dark"> -->
-    <?php if ( have_posts() ) : ?>
-    <?php while ( have_posts() ) : the_post(); ?>
+
+    <!-- Main widget area -->
+    <?php dynamic_sidebar( 'cs-widget-front-center' ); ?>
+    <!-- Widget area ends -->
+    
+    <?php $recentPosts = new WP_Query();
+    $recentPosts->query('showposts=5');
+    while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="post-header">
-            <div class="date"><?php the_time( 'M j y' ); ?></div>
+            
             <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-            <div class="author"><?php the_author(); ?></div>
+            <div class="date">Posted on <?php the_time( 'j-M-Y' ); ?> by <?php the_author(); ?></div>
+            <!-- <div class="author"><?php the_author(); ?></div> -->
         </div>
         <!--end post header-->
         <div class="entry clear">
-            <?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
-            <?php the_content(); ?>
-            <?php edit_post_link(); ?>
+            <div class="post-text">
+                <?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
+                <?php the_content(); ?>
+            </div>
+            <!-- <?php edit_post_link(); ?> -->
             <?php wp_link_pages(); ?> 
         </div>
         <!--end entry-->
         <div class="post-footer">
+            
             <div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
         </div>
+        <!-- <hr class="dark-thick"> -->
         <!--end post footer-->
     </div>
     <!--end post-->
-    <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+    
     <div class="navigation index">
         <div class="alignleft"><?php next_posts_link( 'Older Entries' ); ?></div>
         <div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
     </div>
     <!--end navigation-->
-    <?php else : ?>
-    <?php endif; ?>
+<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
 </div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+<script>
+$(document).ready(function(){
+    $('#menu-item-14').addClass('active');
+});
+</script>
+
 

@@ -2,7 +2,7 @@
 
 
 <body>
-<div>
+  
 
   <!-- Logo Starts -->
     <div class="container sides-unpadded text-center unselectable" id="logo-container">
@@ -24,7 +24,7 @@
 	        </div>
 	        <!--end post header-->
 	        <div class="entry clear">
-	        	<div class="post-text">
+				<div class="post-text">
 	            	<?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
 	            	<?php the_content(); ?>
 	            </div>
@@ -38,6 +38,9 @@
 	        </div>
 	        <hr class="dark-thick">
 	        <!--end post footer-->
+	        <?php if ( comments_open() || get_comments_number() ) :
+				comments_template(); 
+			endif; ?>
 	    </div>
 	    <!--end post-->
 	    <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
@@ -52,9 +55,6 @@
   <!-- Main Content Ends -->
   <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script> -->
   <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
-</div>
-<div class="cs-footer">
+</body>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-</div>
-</body>

@@ -967,7 +967,7 @@ function edit_term_link( $link = '', $before = '', $after = '', $term = null, $e
 		return;
 
 	if ( empty( $link ) )
-		$link = __('Edit This');
+		$link = __('Edit this post');
 
 	$link = '<a href="' . get_edit_term_link( $term->term_id, $term->taxonomy ) . '">' . $link . '</a>';
 
@@ -1237,7 +1237,7 @@ function edit_post_link( $text = null, $before = '', $after = '', $id = 0 ) {
 	}
 
 	if ( null === $text ) {
-		$text = __( 'Edit This' );
+		$text = __( 'Edit this post' );
 	}
 
 	$link = '<a class="post-edit-link" href="' . $url . '">' . $text . '</a>';
@@ -1341,7 +1341,7 @@ function edit_comment_link( $text = null, $before = '', $after = '' ) {
 	}
 
 	if ( null === $text ) {
-		$text = __( 'Edit This' );
+		$text = __( 'Edit this post' );
 	}
 
 	$link = '<a class="comment-edit-link" href="' . get_edit_comment_link( $comment->comment_ID ) . '">' . $text . '</a>';
@@ -1402,7 +1402,7 @@ function edit_bookmark_link( $link = '', $before = '', $after = '', $bookmark = 
 		return;
 
 	if ( empty($link) )
-		$link = __('Edit This');
+		$link = __('Edit this post');
 
 	$link = '<a href="' . get_edit_bookmark_link( $bookmark ) . '">' . $link . '</a>';
 

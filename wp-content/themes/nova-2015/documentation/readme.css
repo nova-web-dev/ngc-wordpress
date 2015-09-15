@@ -1,0 +1,20 @@
+/*=============================================================
+  _   _                   ____                _                
+ | \ | | _____   ____ _  |  _ \ ___  __ _  __| |_ __ ___   ___ 
+ |  \| |/ _ \ \ / / _` | | |_) / _ \/ _` |/ _` | '_ ` _ \ / _ \
+ | |\  | (_) \ V / (_| | |  _ <  __/ (_| | (_| | | | | | |  __/
+ |_| \_|\___/ \_/ \__,_| |_| \_\___|\__,_|\__,_|_| |_| |_|\___|
+=============================================================*/
+
+/*
+
+This is the documentation for the Nova 2015 theme. I've created
+this theme from a static site, split up into the different
+wordpress-compatible files.
+
+Important things to note:
+=========================
+• There is a script tag at the bottom of front-page.php
+that makes menu-item-14 have the class "active" if selected.
+
+*/
