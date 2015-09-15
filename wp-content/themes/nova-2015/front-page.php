@@ -21,7 +21,7 @@
         <div class="carousel-inner" role="listbox">
             <!-- Slide 1 -->
             <div class="item active">
-                <img style="width:100%" src="images/slider/001-minecraft.jpg" alt="image-missing!">
+                <img style="width:100%" src="images/slider/001-minecraft_2.jpg" alt="image-missing!">
                 <div class="carousel-overlay">
                     <!-- 100% div filling entire picture -->
                     <div class="textbox-1-1 text-center">
@@ -45,7 +45,7 @@
             <!-- End of slide 2 -->
             <!-- Slide 3 -->
             <div class="item">
-                <img style="width:100%" src="images/slider/001-minecraft.jpg" alt="image-missing!">
+                <img style="width:100%" src="images/slider/001-minecraft_3.jpg" alt="image-missing!">
                 <div class="carousel-overlay">
                     <!-- 100% div filling entire picture -->
                     <div class="textbox-1-1 text-center">
@@ -57,11 +57,11 @@
             <!-- End of slide 3 -->
             <!-- Slide 4 -->
             <div class="item">
-                <img style="width:100%" src="images/slider/001-minecraft.jpg" alt="image-missing!">
+                <img style="width:100%" src="images/slider/001-minecraft_4.jpg" alt="image-missing!">
                 <div class="carousel-overlay">
                     <!-- 100% div filling entire picture -->
                     <div class="textbox-1-1 text-center">
-                        <span class="text-span-1">We have a minecraft server!</span>
+                        <!-- <span class="text-span-1">We have a minecraft server!</span> -->
                         <span class="text-span-2"><br />Join us there! eis.novagaming.co.za</span>
                     </div>
                 </div>
