@@ -120,6 +120,8 @@ class zipGun_walker_comment extends Walker_Comment {
  
     <?php }
 }
+
+add_theme_support( 'post-thumbnails' ); 
 /*======================================================
 Widget Area
 */
