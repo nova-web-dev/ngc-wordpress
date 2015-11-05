@@ -1,21 +1,38 @@
-
-
 <?php get_header(); ?>
 <!-- Logo Starts -->
 <div class="container sides-unpadded text-center unselectable" id="logo-container">
     <h1 id="logo-text">nova</h1>
-    <h1 id="logo-subtext">gaming community</h1>
+    <!-- <h1 id="logo-subtext">gaming community</h1> -->
 </div>
 <!-- Logo Ends -->
 
+<div class="container text-center">
+    <h2 id="cs-featured-item">Featured Games:</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <iframe src="http://store.steampowered.com/widget/346110/?t=Struggle%20to%20survive%20on%20a%20mysterious%20island%2C%20filled%20with%20ferocious%20dinosaurs!" frameborder="0" width="100%" height="200"></iframe>
+        </div>
+        <div class="col-sm-6">
+            <iframe src="http://store.steampowered.com/widget/230410/" frameborder="0" width="100%" height="200"></iframe>
+        </div>
+    </div>
 
+</div>
 <!-- Main Content Starts -->
 <div class="container text-center" id="main-content">
 
     <!-- Main widget area -->
-    <?php dynamic_sidebar( 'cs-widget-front-center' ); ?>
-    <!-- Widget area ends -->
+
+
+            
+
+
+            
     
+    <?php dynamic_sidebar( 'cs-widget-front-center' ); ?>
+
+    <!-- Widget area ends -->
+    <h1 id="cs-news-header">Latest News</h1>
     <?php $recentPosts = new WP_Query();
     $recentPosts->query('showposts=5');
     while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>

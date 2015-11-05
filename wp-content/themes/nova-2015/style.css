@@ -14,11 +14,16 @@ Author URI: www.codelab.io
  |_| \_|\____|\____|  \___|___/___/ |_| |_|_|\___|
                                                   
 =====================================================================*/
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 body{
   font-family: 'Roboto', sans-serif; font-weight: 400;
-  background-color: #3F3E3A;
+  /*background-color: #3F3E3A;*/
   margin-top: 60px;
+  background-image:url("images/nbanta_1395248102_81.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto', sans-serif; font-weight: 700;
@@ -47,6 +52,12 @@ a{
 a.light{
   color:lightblue;
 }
+a.cs-unstyled{
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; font-weight: 400;
+}
 .dark-footer a{
   color:lightblue !important;
 }
@@ -74,9 +85,9 @@ table, th, td{
   margin-bottom: 20px;
 }
 #logo-container{
-  background-color: #3F3E3A;
+  color: #3F3E3A;
   /*height:25vh;*/
-  color:#fddc6c;
+  /*color:#fddc6c;*/
   cursor: default;
 }
 #logo-text{
@@ -95,6 +106,12 @@ table, th, td{
   margin: 0px;
   margin-bottom:30px;
 }
+#cs-news-header{
+  font-size:5vw;
+  font-family: 'Roboto', sans-serif; font-weight: 100 !important;
+  /*font-family: 'Oswald', sans-serif;*/
+}
+
 /*=====================================================================
    ____                               _ 
   / ___|__ _ _ __ ___  _   _ ___  ___| |
@@ -203,6 +220,9 @@ ul.children{
 }
 .post-footer{
   margin-bottom: 30px;
+}
+#cs-featured-item{
+  font-family: 'Roboto', sans-serif; font-weight: 100 !important;
 }
 /*=======================================================================
   __  __          _ _          ___                  _           
