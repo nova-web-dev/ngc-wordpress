@@ -20,10 +20,10 @@ body{
   font-family: 'Roboto', sans-serif; font-weight: 400;
   /*background-color: #3F3E3A;*/
   margin-top: 60px;
-  background-image:url("images/nbanta_1395248102_81.jpg");
+  background-image:url("images/red.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  /*background-size: 100% auto;*/
 }
 h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto', sans-serif; font-weight: 700;
@@ -85,10 +85,14 @@ table, th, td{
   margin-bottom: 20px;
 }
 #logo-container{
-  color: #3F3E3A;
+  /*color: #3F3E3A;*/
   /*height:25vh;*/
-  /*color:#fddc6c;*/
+  color:#fddc6c;
   cursor: default;
+}
+#logo-container h1{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 #logo-text{
   font-size:150px;
@@ -110,6 +114,14 @@ table, th, td{
   font-size:5vw;
   font-family: 'Roboto', sans-serif; font-weight: 100 !important;
   /*font-family: 'Oswald', sans-serif;*/
+}
+.sub-logo-container{
+  color: #fddc6c;
+
+}
+.sub-logo-container h2{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 /*=====================================================================
@@ -158,7 +170,9 @@ table, th, td{
 =====================================================================*/
 #main-content{
   /*margin-top:92px;*/
-  background-color: #C1E1A6;
+  /*background-color: #C1E1A6;*/
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
   /*border-radius: 5px;*/
 }
 .sides-unpadded{
@@ -260,9 +274,11 @@ ul.children{
   #logo-text{
     margin-top: 0px;
     font-size: 18vw;
+    color: #fddc6c;
   }
   #logo-subtext{
     font-size: 8vw;
+    color: #fddc6c;
   }
   .post-text{
     font-size: 15px;
