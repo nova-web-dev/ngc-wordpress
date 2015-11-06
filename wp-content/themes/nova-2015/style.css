@@ -15,7 +15,8 @@ Author URI: www.codelab.io
                                                   
 =====================================================================*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700);
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
 body{
   font-family: 'Roboto', sans-serif; font-weight: 400;
   /*background-color: #3F3E3A;*/
@@ -26,7 +27,17 @@ body{
   /*background-size: 100% auto;*/
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Roboto', sans-serif; font-weight: 700;
+  /*font-family: 'Roboto', sans-serif; font-weight: 700;*/
+  /*font-family: 'Oswald', sans-serif; font-weight: 400;*/
+  font-family: 'Shadows Into Light Two', cursive;
+}
+h1 a{
+  /*font-family: 'Oswald', sans-serif; font-weight: 400;*/
+  font-family: 'Shadows Into Light Two', cursive;
+}
+h2 a{
+  /*font-family: 'Oswald', sans-serif; font-weight: 400;*/
+  font-family: 'Shadows Into Light Two', cursive;
 }
 p{
   font-family: 'Roboto', sans-serif; font-weight: 400;
@@ -48,6 +59,7 @@ hr.dark-thick{
 }
 a{
   color:#3F3E3A;
+  /*font-family: 'Oswald', sans-serif; font-weight: 400;*/
 }
 a.light{
   color:lightblue;
@@ -97,10 +109,15 @@ table, th, td{
 #logo-text{
   font-size:150px;
   font-family: 'Roboto', sans-serif; font-weight: 100 !important;
+  /*font-family: 'Shadows Into Light Two', cursive;*/
   padding-top: 0px;
   padding-bottom: 0px;
   margin: 0px;
   margin-top: -40px;
+}
+#cs-featured-item{
+  /*font-family: 'Roboto', sans-serif; font-weight: 100 !important;*/
+  font-family: 'Shadows Into Light Two', cursive;
 }
 #logo-subtext{  
   font-family: 'Roboto', sans-serif; font-weight: 100 !important;
@@ -112,11 +129,16 @@ table, th, td{
 }
 #cs-news-header{
   font-size:5vw;
-  font-family: 'Roboto', sans-serif; font-weight: 100 !important;
-  /*font-family: 'Oswald', sans-serif;*/
+  /*font-family: 'Roboto', sans-serif; font-weight: 100 !important;*/
+  /*font-family: 'Oswald', sans-serif; font-weight: 400;*/
+  font-family: 'Shadows Into Light Two', cursive;
 }
 .sub-logo-container{
   color: #fddc6c;
+  background-color: rgba(0,0,0,0.5);
+  border: 3px solid black;
+  border-radius: 20px;
+  margin-bottom: 50px;
 
 }
 .sub-logo-container h2{
@@ -171,7 +193,7 @@ table, th, td{
 #main-content{
   /*margin-top:92px;*/
   /*background-color: #C1E1A6;*/
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(254, 235, 167,0.8);
   border-radius: 10px;
   /*border-radius: 5px;*/
 }
@@ -184,7 +206,7 @@ table, th, td{
 }
 .cs-footer{
   color:#fddc6c;
-  background-color:#333;
+  background-color:#262626;
   padding-top: 20px;
   padding-bottom: 20px;
   overflow: auto;
@@ -205,7 +227,8 @@ table, th, td{
 }
 .post-header h2{
   font-size: 50px;
-  font-family: 'Roboto', sans-serif; font-weight: 100;
+  /*font-family: 'Roboto', sans-serif; font-weight: 100;*/
+  font-family: 'Shadows Into Light Two', cursive;
 }
 .post-text{
   margin-top: 30px;
@@ -235,9 +258,7 @@ ul.children{
 .post-footer{
   margin-bottom: 30px;
 }
-#cs-featured-item{
-  font-family: 'Roboto', sans-serif; font-weight: 100 !important;
-}
+
 /*=======================================================================
   __  __          _ _          ___                  _           
  |  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___ 
@@ -275,6 +296,7 @@ ul.children{
     margin-top: 0px;
     font-size: 18vw;
     color: #fddc6c;
+
   }
   #logo-subtext{
     font-size: 8vw;
