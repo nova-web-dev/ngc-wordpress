@@ -24,14 +24,14 @@
 
 <div class="container text-center" id="main-content">
 
-        <!-- Main widget area -->
+    <!-- Main widget area -->
 
 
-                
+            
 
 
-                
-        
+    <!-- <div class="row">         -->
+
         <?php dynamic_sidebar( 'cs-widget-front-center' ); ?>
 
         <!-- Widget area ends -->
@@ -70,7 +70,10 @@
             <div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
         </div>
         <!--end navigation-->
-<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+        <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+        <!-- </div> -->
+
+    </div>
 </div>
 
 
