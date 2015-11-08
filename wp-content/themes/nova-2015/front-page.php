@@ -37,7 +37,7 @@
         <!-- Widget area ends -->
         <h1 id="cs-news-header">Latest News</h1>
         <?php $recentPosts = new WP_Query();
-        $recentPosts->query('showposts=5');
+        $recentPosts->query('showposts=5&cat=5');
         while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div class="post-header">

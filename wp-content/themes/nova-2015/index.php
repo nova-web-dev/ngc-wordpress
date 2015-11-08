@@ -36,7 +36,7 @@
 	        	<?php wp_reset_query(); ?>
 	            <div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
 	        </div>
-	        <hr class="dark-thick">
+	        <!-- <hr class="dark-thick"> -->
 	        <!--end post footer-->
 	    </div>
 	    <!--end post-->
