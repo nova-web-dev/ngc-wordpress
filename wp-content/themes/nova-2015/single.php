@@ -28,19 +28,20 @@
 	            	<?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
 	            	<?php the_content(); ?>
 	            </div>
-	            <?php edit_post_link(); ?>
+	            <!-- <?php edit_post_link(); ?> -->
 	            <?php wp_link_pages(); ?> 
 	        </div>
 	        <!--end entry-->
 	        <div class="post-footer">
 	        	<?php wp_reset_query(); ?>
-	            <div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
+	            <!-- <div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div> -->
+
+
+	            
 	        </div>
-	        <hr class="dark-thick">
+	        <!-- <hr class="dark-thick"> -->
 	        <!--end post footer-->
-	        <?php if ( comments_open() || get_comments_number() ) :
-				comments_template(); 
-			endif; ?>
+
 	    </div>
 	    <!--end post-->
 	    <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>

@@ -2,11 +2,12 @@
 <!-- Logo Starts -->
 <div class="container sides-unpadded text-center unselectable" id="logo-container">
     <h1 id="logo-text">nova</h1>
+    <h1 id="logo-subtext">gaming community</h1>
     <!-- <h1 id="logo-subtext">gaming community</h1> -->
 </div>
 <!-- Logo Ends -->
 
-<div class="container text-center sub-logo-container">
+<!-- <div class="container text-center sub-logo-container">
     <h2 id="cs-featured-item">Featured Games:</h2>
     <div class="row">
         <div class="col-sm-6">
@@ -17,7 +18,8 @@
         </div>
     </div>
 
-</div>
+</div> -->
+
 <!-- Main Content Starts -->
 
 
