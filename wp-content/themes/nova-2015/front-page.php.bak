@@ -58,13 +58,17 @@
             <!--end entry-->
             <div class="post-footer">
                 
-                <!-- <div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div> -->
+                <div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
             </div>
             <!-- <hr class="dark-thick"> -->
             <!--end post footer-->
         </div>
         <!--end post-->
         
+        <div class="navigation index">
+            <div class="alignleft"><?php next_posts_link( 'Older Entries' ); ?></div>
+            <div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
+        </div>
         <!--end navigation-->
         <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
         <!-- </div> -->
